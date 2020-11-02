@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Frontend</title>
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/DataTables/css/datatables.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Blockchain Client</a>
+
+            <div clas="collapse navbar-collapse">
+                <ul class="navbar nav ml-auto">
+                    <li class="nav-item action">
+                        <a href="/" class="nav-link">Wallet Generator</a>
+                    </li>
+                    <li class="nav-item action">
+                        <a href="/make/transaction" class="nav-link">Make Transaction</a>
+                    </li>
+                    <li class="nav-item action">
+                        <a href="/view/transaction" class="nav-link">View Transaction</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card">
+        <div class="row">
+            <div class="card-body text-center">
+                <h4 class="card-title">Wallet Generator</h4>
+                <p class="card-text">Click on the button below to generate your blockchain wallet</p>
+            </br>
+                <input type="button" class="btn btn-primary btn-lg walgen" value="Generate Wallet">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <label for="Public Key" class="col-sm-2">Public Key:</label>
+        <textarea id="public_key" rows="5" columns='15' class="form-control"></textarea>
+
+    </div>
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/vendor/DataTables/js/datatables.min.js"></script>
+    <script src="/static/vendor/DataTables/js/ellipsis.js"></script>
+
+
+    <script>
+        $(function() {
+
+        });
+    </script>
+</body>
+</html>
